@@ -1,0 +1,17 @@
+###
+# This file is part of the RichModelBundle.
+#
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+#
+# @author Charles B.-Légaré <cblegare.atl@ntis.ca>
+###
+
+parameters:
+    doctrine.orm.entity_manager.class:
+        Abstrus\RichModelBundle\ORM\EntityManager
+    abstrus_rich_model.repository_factory.class:
+        Abstrus\RuchModelBundle\ORM\DIAwareRepositoryFactory
+        
+services:
+    

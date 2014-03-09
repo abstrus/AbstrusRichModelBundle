@@ -1,0 +1,26 @@
+{
+    "name": "abstrus/rich-model-bundle",
+    "description": "ISandbox toolbox for building rich business models with Doctrine and Symfony.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Charles Bouchard-Légaré",
+            "email": "cblegare.atl@ntis.ca"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "~2.2",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2"
+    },
+    "autoload": {
+        "psr-0": { "Abstrus\\Bundle\\RichModelBundle": "" }
+    },
+    "target-dir": "Abstrus/Bundle/RichModelBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
