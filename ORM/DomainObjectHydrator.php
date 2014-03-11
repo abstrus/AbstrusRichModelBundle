@@ -12,8 +12,6 @@ namespace Abstrus\RichModelBundle\ORM;
 
 use Doctrine\ORM\Internal\Hydration\ObjectHydrator;
 
-use PDO;
-
 use Abstrus\RichDomainBundle\Model\Entity\Factory\EntityFactory;
 
 /**
