@@ -32,7 +32,7 @@ class DomainObjectHydrator
     {
         parent::__construct($entitymanager);
 
-        $this-factory = $factory;
+        $this->factory = $factory;
     }
     
     public function hydrateAll($stmt, $resultSetMapping, array $hints = array())
