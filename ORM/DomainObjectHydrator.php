@@ -38,8 +38,8 @@ class DomainObjectHydrator
     public function hydrateAll($stmt, $resultSetMapping, array $hints = array())
     {
         $result = array();
-        foreach (parent::hydrateAll($stmt, $resultSetMapping, $hints) as $valueObject) {
-            $result[] = $this->factory->create($valueObject);
+        foreach (parent::hydrateAll($stmt, $resultSetMapping, $hints) as $row) {
+            $result[] = $this->factory->create($row);
         }
         
         return $result;
