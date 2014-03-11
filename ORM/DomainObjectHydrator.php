@@ -33,6 +33,9 @@ class DomainObjectHydrator
         $this->factory = $factory;
     }
     
+    /**
+     * {@inheritDoc}
+     */
     public function hydrateAll($stmt, $resultSetMapping, array $hints = array())
     {
         $result = array();
@@ -43,6 +46,9 @@ class DomainObjectHydrator
         return $result;
     }
     
+    /**
+     * {@inheritDoc}
+     */
     public function hydrateRow() 
     {
         return $this->factory->create(parent::hydrateRow());
