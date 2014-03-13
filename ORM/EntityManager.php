@@ -27,13 +27,13 @@ class EntityManager
      *
      * Try to fetch a subscribed hydrator.  If not found, defaults to parent behavior.
      */
-    public function getHydrator($hydrationMode)
+    public function newHydrator($hydrationMode)
     {
         if (isset($this->hydratorServices[$hydrationMode])) {
             return $this->hydratorServices[$hydrationMode];
         }
         
-        return parent::getHydrator($hydrationMode);
+        return parent::newHydrator($hydrationMode);
     }
     
     /**
